@@ -21,6 +21,7 @@ on:
       - '.github/workflows/build-and-test-postgres.yml'
       - '.github/workflows/build-and-test-redis.yml'
       - '.github/workflows/publish-image-snapshot.yml'
+      - '.github/workflows/build-and-test-cross-browser.yml'
       - '.gitlab-ci.yml'
   pull_request:
     paths-ignore:
@@ -28,6 +29,7 @@ on:
       - '.github/workflows/build-and-test-postgres.yml'
       - '.github/workflows/build-and-test-redis.yml'
       - '.github/workflows/publish-image-snapshot.yml'
+      - '.github/workflows/build-and-test-cross-browser.yml'
       - '.gitlab-ci.yml'
 
 jobs:

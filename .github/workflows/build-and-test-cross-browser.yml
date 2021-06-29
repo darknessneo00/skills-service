@@ -14,10 +14,17 @@
 
 name: Cross-browser E2E Tests
 
+#on:
+#  schedule:
+#    - cron: '0 5 * * *'
+#  workflow_dispatch:
+
+# temp, for branch testing
 on:
-  schedule:
-    - cron: '0 5 * * *'
-  workflow_dispatch:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - '.gitlab-ci.yml'
 
 jobs:
   pre_job:
