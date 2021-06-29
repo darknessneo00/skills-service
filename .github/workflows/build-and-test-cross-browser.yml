@@ -138,7 +138,6 @@ jobs:
 
     - name: Run Cypress tests
       run: |
-        |
         cd e2e-tests
         browserstack-cypress run --sync
 
