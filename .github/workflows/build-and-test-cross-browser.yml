@@ -93,7 +93,7 @@ jobs:
 
     steps:
     - name: Install Emoji Support
-      run: apt-get install fonts-noto-color-emoji
+      run: sudo apt-get install fonts-noto-color-emoji
 
     - uses: actions/checkout@v2
 
