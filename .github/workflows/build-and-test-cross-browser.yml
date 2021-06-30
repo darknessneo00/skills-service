@@ -121,13 +121,6 @@ jobs:
         username:  ${{ secrets.BROWSERSTACK_USERNAME }}
         access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
 
-    - name: 'Start BrowserStackLocal Tunnel'
-      uses: 'browserstack/github-actions/setup-local@master'
-      with:
-        local-testing: 'start'
-        local-logging-level: 'all-logs'
-        local-identifier: 'random'
-
     - name: Prep Services for Cypress tests
       run: |
         cd e2e-tests

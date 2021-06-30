@@ -89,5 +89,9 @@
         "package_config_options": {},
         "headless": true
     },
+    "connection_settings": {
+        "local": true,
+        "local_identifier": "SkillTreeCrossBrowserTest"
+    },
     "disable_usage_reporting": true
 }
