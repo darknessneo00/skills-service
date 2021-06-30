@@ -139,7 +139,7 @@ jobs:
     - name: Run Cypress tests
       run: |
         cd e2e-tests
-        browserstack-cypress run --sync
+        browserstack-cypress run --sync --browserstack.localIdentifier=${{env.BROWSERSTACK_LOCAL_IDENTIFIER}}
 
     - name: upload result artifacts
       if: ${{ always() }}
