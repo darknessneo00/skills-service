@@ -130,7 +130,6 @@ jobs:
       uses: cypress-io/github-action@v2
       with:
         working-directory: e2e-tests
-        browser: chrome
         record: true
         parallel: true
         group: 'skills-service tests - UI-Chrome'
