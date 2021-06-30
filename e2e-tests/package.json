@@ -68,7 +68,7 @@
   "devDependencies": {
     "@bahmutov/print-env": "2.1.2",
     "badge-maker": "3.3.0",
-    "cypress": "6.6.0",
+    "cypress": "6.7.1",
     "cypress-audit": "0.3.0",
     "cypress-axe": "0.12.2",
     "cypress-file-upload": "5.0.2",
