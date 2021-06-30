@@ -134,7 +134,7 @@ jobs:
         record: true
         parallel: true
         group: 'skills-service tests - UI-Chrome'
-        tag: "${{ github.workflow }}",'cross_browser-chrome'
+        tag: "${{ github.workflow }},cross_browser-chrome"
       env:
         # pass the Dashboard record key as an environment variable
         CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -207,7 +207,7 @@ jobs:
           record: true
           parallel: true
           group: 'skills-service tests - UI-Firefox'
-          tag: "${{ github.workflow }}",'cross_browser-firefox'
+          tag: "${{ github.workflow }},cross_browser-firefox"
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -280,7 +280,7 @@ jobs:
           record: true
           parallel: true
           group: 'skills-service tests - UI-Firefox'
-          tag: "${{ github.workflow }}",'cross_browser-edge'
+          tag: "${{ github.workflow }},cross_browser-edge"
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
