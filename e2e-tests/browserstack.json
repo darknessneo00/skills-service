@@ -84,7 +84,7 @@
         "cypress_version": "7",
         "specs": ["cypress/integration/**"],
         "exclude": [],
-        "parallels": "5",
+        "parallels": "2",
         "npm_dependencies": {},
         "package_config_options": {},
         "headless": true
