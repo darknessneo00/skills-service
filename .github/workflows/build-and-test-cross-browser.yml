@@ -224,7 +224,6 @@ jobs:
             ./e2e-tests/cypress/snapshots/**/**/__diff_output__/*.png
             ./e2e-tests/cypress/snapshots/**/__diff_output__/*.png
 
-
   ui-edge-tests-against-h2:
     runs-on: windows-latest
     needs: [build-skills-service-for-ui-tests]
