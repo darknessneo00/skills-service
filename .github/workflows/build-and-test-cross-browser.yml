@@ -132,7 +132,7 @@ jobs:
         working-directory: e2e-tests
         record: true
         parallel: true
-        browser: chrome,
+        browser: chromium,
         group: 'skills-service tests - UI-Chrome'
         tag: "${{ github.workflow }},cross_browser-chrome"
       env:
