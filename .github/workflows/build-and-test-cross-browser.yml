@@ -106,7 +106,6 @@ jobs:
         java-version: '11.X.X' # The JDK version to make available on the path.
 
     - uses: browser-actions/setup-chrome@latest
-      run: export BROWSER=$(which chrome)
       with:
         chrome-version: latest
 
@@ -114,6 +113,8 @@ jobs:
       run: |
         mvn --version
         java -version
+        chrome --version
+        export BROWSER=$(which chrome)
 
     - uses: actions/download-artifact@v2
       with:
